@@ -9,4 +9,12 @@
 
 @implementation TestUtil
 
+- (void) instanceMethod {
+    NSLog(@"instance");
+}
+
++ (void) classMethod {
+    NSLog(@"classssss method");
+}
+
 @end

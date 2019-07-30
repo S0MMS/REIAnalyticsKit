@@ -1,0 +1,22 @@
+{
+  "name": "REIAnalyticsKit",
+  "version": "0.1.0",
+  "summary": "Analytics for REIs mobile ecosystem.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/S0MMS/REIAnalyticsKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "S0MMS": "cshreve@rei.com"
+  },
+  "source": {
+    "git": "https://github.com/S0MMS/REIAnalyticsKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "REIAnalyticsKit/Classes/**/*"
+}

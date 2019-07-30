@@ -1,0 +1,6 @@
+framework module REIAnalyticsKit {
+  umbrella header "REIAnalyticsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TestUtil : NSObject
 
+- (void) instanceMethod;
++ (void) classMethod;
+
 @end
 
 NS_ASSUME_NONNULL_END
