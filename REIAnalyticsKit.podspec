@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/S0MMS/REIAnalyticsKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'REIAnalyticsKit/Classes/**/*'
   
@@ -39,4 +39,19 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.static_framework = true
+  
+  #s.dependency 'ACPTargetVEC', '~> 2.0'
+  #s.dependency 'ACPMobileServices', '~> 1.0'
+  #s.dependency 'ACPTarget', '~> 2.1'
+  #s.dependency 'ACPAudience', '~> 2.0'
+  s.dependency 'ACPAnalytics', '~> 2.0'
+  #s.dependency 'ACPPlacesMonitor', '~> 1.0'
+  s.dependency 'ACPCore', '~> 2.0'
+  s.dependency 'ACPUserProfile', '~> 2.0'
+  
+  s.dependency 'NewRelicAgent'
+  
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64 armv7' }
+  
 end
