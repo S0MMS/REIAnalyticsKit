@@ -10,7 +10,18 @@
 #endif
 #endif
 
-#import "TestUtil.h"
+#import "REIAdobeAnalyticsAdapter.h"
+#import "REIAnalyticsAdapter.h"
+#import "REIAnalyticsConfigurationLoader.h"
+#import "REIAnalyticsDataProvider.h"
+#import "REIAnalyticsDispatcher.h"
+#import "REIAnalyticsKitAdobeHelper.h"
+#import "REIAnalyticsKitHelper.h"
+#import "REIAnalyticsViewController.h"
+#import "REICoreAnalyticsDataProvider.h"
+#import "REINewRelicAnalyticsAdapter.h"
+#import "REIObjectFactory.h"
+#import "UIViewController+REIAnalyticsDispatcher.h"
 
 FOUNDATION_EXPORT double REIAnalyticsKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char REIAnalyticsKitVersionString[];

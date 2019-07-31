@@ -8,11 +8,24 @@
 
 #import "SOMMSAppDelegate.h"
 
+@import REIAnalyticsKit;
+
 @implementation SOMMSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSString *adobeAppId = @"launch-EN1801f26390774bb8bab92a68711cb71c-development";
+    [[REIAnalyticsKitHelper shared] configureAdobeAnalytics:adobeAppId];
+
+#if DEBUG || ADHOC
+    [[REIAnalyticsKitHelper shared] configureNewRelicAnalytics:@"AA20f451bc102b114645689092c95bb597146165c4"];
+//    [NewRelicAgent startWithApplicationToken:@"AA20f451bc102b114645689092c95bb597146165c4"];
+#else
+    [[REIAnalyticsKitHelper shared] configureNewRelicAnalytics:@"AA358d1d61904acb8dd941d8709246e68917da15ef"];
+//    [NewRelicAgent startWithApplicationToken:@"AA358d1d61904acb8dd941d8709246e68917da15ef"];
+#endif
+    
     return YES;
 }
 
