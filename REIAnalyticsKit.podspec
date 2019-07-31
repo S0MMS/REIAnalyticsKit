@@ -43,7 +43,7 @@ TODO: Add long description of the pod here.
   
   #s.dependency 'ACPTargetVEC', '~> 2.0'
   #s.dependency 'ACPMobileServices', '~> 1.0'
-  #s.dependency 'ACPTarget', '~> 2.1'
+  s.dependency 'ACPTarget', '~> 2.1'
   #s.dependency 'ACPAudience', '~> 2.0'
   s.dependency 'ACPAnalytics', '~> 2.0'
   #s.dependency 'ACPPlacesMonitor', '~> 1.0'

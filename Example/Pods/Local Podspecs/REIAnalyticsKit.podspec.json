@@ -21,6 +21,9 @@
   "source_files": "REIAnalyticsKit/Classes/**/*",
   "static_framework": true,
   "dependencies": {
+    "ACPTarget": [
+      "~> 2.1"
+    ],
     "ACPAnalytics": [
       "~> 2.0"
     ],

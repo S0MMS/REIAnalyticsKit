@@ -4,11 +4,8 @@ platform :ios, '10.0'
 
 target 'REIAnalyticsKit_Example' do
   
-#  pod 'ACPMobileServices', '~> 1.0'
-#  pod 'ACPTarget', '~> 2.1'
-#  pod 'ACPAudience', '~> 2.0'
+  pod 'ACPTarget', '~> 2.1'
   pod 'ACPAnalytics', '~> 2.0'
-#  pod 'ACPPlacesMonitor', '~> 1.0'
   pod 'ACPCore', '~> 2.0'
   pod 'ACPUserProfile', '~> 2.0'
   

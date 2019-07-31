@@ -12,7 +12,7 @@
 #import "ACPCore.h"
 //#import "ACPTargetVEC.h"
 //#import "ACPMobileServices.h"
-//#import "ACPTarget.h"
+#import "ACPTarget.h"
 //#import "ACPAudience.h"
 #import "ACPAnalytics.h"
 //#import "ACPPlacesMonitor.h"
@@ -88,7 +88,7 @@ NSString * const REIAnalyticsContextPageAndActionKey = @"rei.pageAndAction";
     // FULL TILT
 //    [ACPTargetVEC registerExtension];
 //    [ACPMobileServices registerExtension];
-//    [ACPTarget registerExtension];
+    [ACPTarget registerExtension];
 //    [ACPAudience registerExtension];
     [ACPAnalytics registerExtension];
 //    [ACPPlacesMonitor registerExtension];

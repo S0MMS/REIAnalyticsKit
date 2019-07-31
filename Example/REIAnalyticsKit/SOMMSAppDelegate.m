@@ -20,10 +20,8 @@
 
 #if DEBUG || ADHOC
     [[REIAnalyticsKitHelper shared] configureNewRelicAnalytics:@"AA20f451bc102b114645689092c95bb597146165c4"];
-//    [NewRelicAgent startWithApplicationToken:@"AA20f451bc102b114645689092c95bb597146165c4"];
 #else
     [[REIAnalyticsKitHelper shared] configureNewRelicAnalytics:@"AA358d1d61904acb8dd941d8709246e68917da15ef"];
-//    [NewRelicAgent startWithApplicationToken:@"AA358d1d61904acb8dd941d8709246e68917da15ef"];
 #endif
     
     return YES;
