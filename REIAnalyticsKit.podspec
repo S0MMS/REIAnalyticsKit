@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'REIAnalyticsKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Analytics for REIs mobile ecosystem.'
 
 # This description is used to generate tags and improve search results.
@@ -41,12 +41,8 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   s.static_framework = true
   
-  #s.dependency 'ACPTargetVEC', '~> 2.0'
-  #s.dependency 'ACPMobileServices', '~> 1.0'
   s.dependency 'ACPTarget', '~> 2.1'
-  #s.dependency 'ACPAudience', '~> 2.0'
   s.dependency 'ACPAnalytics', '~> 2.0'
-  #s.dependency 'ACPPlacesMonitor', '~> 1.0'
   s.dependency 'ACPCore', '~> 2.0'
   s.dependency 'ACPUserProfile', '~> 2.0'
   

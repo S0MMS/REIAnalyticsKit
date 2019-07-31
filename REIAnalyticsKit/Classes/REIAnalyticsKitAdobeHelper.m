@@ -8,14 +8,10 @@
 
 #import "REIAnalyticsKitAdobeHelper.h"
 
-// CKS: REIAnalyticsKit - FIX
 #import "ACPCore.h"
-//#import "ACPTargetVEC.h"
-//#import "ACPMobileServices.h"
 #import "ACPTarget.h"
-//#import "ACPAudience.h"
+#import "ACPTargetRequestObject.h"
 #import "ACPAnalytics.h"
-//#import "ACPPlacesMonitor.h"
 #import "ACPIdentity.h"
 #import "ACPLifecycle.h"
 #import "ACPSignal.h"
@@ -77,7 +73,6 @@ NSString * const REIAnalyticsContextPageAndActionKey = @"rei.pageAndAction";
 }
 
 - (void)configureAdobeAnalytics: (NSString *)adobeApplicationId {
-    NSLog(@"configuring Adobe analytics...");
     
 #if DEBUG
     [ACPCore setLogLevel:ACPMobileLogLevelVerbose];
@@ -86,12 +81,8 @@ NSString * const REIAnalyticsContextPageAndActionKey = @"rei.pageAndAction";
 #endif
     
     // FULL TILT
-//    [ACPTargetVEC registerExtension];
-//    [ACPMobileServices registerExtension];
     [ACPTarget registerExtension];
-//    [ACPAudience registerExtension];
     [ACPAnalytics registerExtension];
-//    [ACPPlacesMonitor registerExtension];
     [ACPIdentity registerExtension];
     [ACPLifecycle registerExtension];
     [ACPSignal registerExtension];
@@ -103,7 +94,6 @@ NSString * const REIAnalyticsContextPageAndActionKey = @"rei.pageAndAction";
     }];
     
 }
-
 
 - (void)retrieveCloudId {
     [ACPIdentity getExperienceCloudId:^(NSString * _Nullable retrievedCloudId) {
