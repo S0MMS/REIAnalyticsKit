@@ -16,6 +16,7 @@
 
 - (NSArray *)globalAnalyticsProviders;
 - (NSArray *)globalAnalyticsAdapters;
+- (NSDictionary *)globalDefaults;
 - (NSDictionary *)defaultsForClass:(NSString *)className;
 - (NSDictionary *)contextDataForClass:(NSString *)className;
 - (NSArray *)adaptersForClass:(NSString *)className;

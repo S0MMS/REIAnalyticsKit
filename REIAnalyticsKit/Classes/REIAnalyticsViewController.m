@@ -243,7 +243,8 @@ static NSString * const kTrackStateKey = @"trackState";
     [super viewDidAppear:animated];
     
     if (self.trackState == TrackStateOnAppear) {
-        [self handleEvent:[self analyticsPageName] contextData:[self asContextData]];
+        NSDictionary *contextData = [self asContextData];
+        [self handleEvent:[self analyticsPageName] contextData:contextData];
     }
 }
 

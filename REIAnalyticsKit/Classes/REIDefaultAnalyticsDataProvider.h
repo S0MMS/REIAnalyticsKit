@@ -7,9 +7,11 @@
 
 #import <Foundation/Foundation.h>
 
+#import "REIAnalyticsDataProvider.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface REIDefaultAnalyticsDataProvider : NSObject
+@interface REIDefaultAnalyticsDataProvider : NSObject <REIAnalyticsDataProvider>
 
 @end
 

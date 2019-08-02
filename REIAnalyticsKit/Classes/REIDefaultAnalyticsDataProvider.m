@@ -7,6 +7,12 @@
 
 #import "REIDefaultAnalyticsDataProvider.h"
 
+#import "REIAnalyticsConfigurationLoader.h"
+
 @implementation REIDefaultAnalyticsDataProvider
+
+- (NSDictionary * _Nullable)getAnalyticsData {
+    return [[REIAnalyticsConfigurationLoader shared] globalDefaults];
+}
 
 @end

@@ -58,7 +58,7 @@ static NSString * const kAdaptersKey = @"adapters";
     return _configuration;
 }
 
-- (NSDictionary *)defaultData {
+- (NSDictionary *)globalDefaults {
     
     NSDictionary *defaultDataDictionary = nil;
     
@@ -114,28 +114,24 @@ static NSString * const kAdaptersKey = @"adapters";
     NSDictionary *data = nil;
 
     if (self.configuration) {
+        
+        NSDictionary *globalDefaults = [self globalDefaults];
+        NSDictionary *classDefaults = nil;
+        
         NSDictionary *classesBlock = self.configuration[kClassesKey];
-
         if (classesBlock) {
             NSDictionary *classData = classesBlock[className];
 
             if (classData) {
-                NSDictionary *defaults = classData[kDefaultsKey];
-                
-                NSDictionary *defaultContext = [self defaultData];
-                if (defaultContext) {
-                    NSMutableDictionary *mergedDefaults = [[NSMutableDictionary alloc] initWithDictionary:defaultContext];
-                    
-                    for (id key in defaults) {
-                        mergedDefaults[key] = defaults[key];
-                    }
-                    data = [[NSDictionary alloc] initWithDictionary: mergedDefaults];
-                } else {
-                    data = defaults;
-                }
-                
+                classDefaults = classData[kDefaultsKey];
             }
         }
+        
+        // merge global and class defaults
+        NSMutableDictionary *mergedDefaults = [[NSMutableDictionary alloc] initWithDictionary:globalDefaults];
+        [mergedDefaults addEntriesFromDictionary:classDefaults];
+        data = [[NSDictionary alloc] initWithDictionary: mergedDefaults];
+                
     }
 
     return data;

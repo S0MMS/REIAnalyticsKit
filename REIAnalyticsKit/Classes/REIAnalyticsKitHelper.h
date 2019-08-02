@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)shared;
 
 // global stuff
+- (void)dispatchAnalyticsEvent:(NSString *)eventName;
 - (void)dispatchAnalyticsEvent:(NSString *)eventName withContextData:(NSDictionary * _Nullable)contextData;
 - (NSDictionary *)aggregateGlobalDataWithContextData:(NSDictionary *)contextData;
 

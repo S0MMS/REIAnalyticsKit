@@ -73,6 +73,10 @@
     }
 }
 
+- (void)dispatchAnalyticsEvent:(NSString *)eventName {
+    [self dispatchAnalyticsEvent:eventName withContextData:nil];
+}
+
 
 - (void)dispatchAnalyticsEvent:(NSString *)eventName withContextData:(NSDictionary * _Nullable)contextData {
     __weak REIAnalyticsKitHelper *weakSelf = self;
@@ -110,10 +114,6 @@
 
 
 // adobe stuff
-//- (void)configureAdobeAnalytics:(NSString *)configFile appGroup:(nullable NSString *)appGroup {
-//    [[REIAnalyticsKitAdobeHelper shared] configureAdobeAnalytics:configFile appGroup:appGroup];
-//}
-
 - (void)configureAdobeAnalytics: (NSString *)adobeApplicationId {
     [[REIAnalyticsKitAdobeHelper shared] configureAdobeAnalytics:adobeApplicationId];
 }
