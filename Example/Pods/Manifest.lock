@@ -19,7 +19,7 @@ PODS:
     - ACPCore (~> 2.0)
   - Expecta (1.0.6)
   - NewRelicAgent (6.7.0)
-  - REIAnalyticsKit (0.1.0):
+  - REIAnalyticsKit (0.1.1):
     - ACPAnalytics (~> 2.0)
     - ACPCore (~> 2.0)
     - ACPTarget (~> 2.1)
@@ -58,7 +58,7 @@ SPEC CHECKSUMS:
   ACPUserProfile: d5141c8f5154e10e3a08124649ddaae13efd5131
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   NewRelicAgent: effc8c7164f7d8e853268b0a6381ad8e4bf1d6ad
-  REIAnalyticsKit: b5ac5d5ed2ac37ef7c4c303b4632f060d930300d
+  REIAnalyticsKit: 276e63bd2119e86ab2e423583f8c04277bf24f51
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: d4be2079f7b27e400a2ca4a823e552f344fc4420

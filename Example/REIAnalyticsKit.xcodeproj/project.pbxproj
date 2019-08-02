@@ -23,6 +23,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B545292222F0FA040065D7DE /* DummySwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545292122F0FA040065D7DE /* DummySwiftObject.swift */; };
+		B55FCBC622F4AA67004B79C5 /* AnalyticsConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B55FCBC522F4AA67004B79C5 /* AnalyticsConfiguration.json */; };
 		CC217C3C9C30548FE8154604 /* Pods_REIAnalyticsKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20D41323F00BEACB53A40AB /* Pods_REIAnalyticsKit_Tests.framework */; };
 		F30D9D6E16532ADB06CF2F83 /* Pods_REIAnalyticsKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9EFABD7551DE4547C39F0C2 /* Pods_REIAnalyticsKit_Example.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		AE9E994C7D615DB2B5A7893E /* Pods-REIAnalyticsKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REIAnalyticsKit_Example.release.xcconfig"; path = "Target Support Files/Pods-REIAnalyticsKit_Example/Pods-REIAnalyticsKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B545292022F0FA030065D7DE /* REIAnalyticsKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REIAnalyticsKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		B545292122F0FA040065D7DE /* DummySwiftObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySwiftObject.swift; sourceTree = "<group>"; };
+		B55FCBC522F4AA67004B79C5 /* AnalyticsConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnalyticsConfiguration.json; sourceTree = "<group>"; };
 		D20D41323F00BEACB53A40AB /* Pods_REIAnalyticsKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REIAnalyticsKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EFABD7551DE4547C39F0C2 /* Pods_REIAnalyticsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REIAnalyticsKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 		6003F593195388D20070C39A /* Example for REIAnalyticsKit */ = {
 			isa = PBXGroup;
 			children = (
+				B55FCBC522F4AA67004B79C5 /* AnalyticsConfiguration.json */,
 				6003F59C195388D20070C39A /* SOMMSAppDelegate.h */,
 				6003F59D195388D20070C39A /* SOMMSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -289,6 +292,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				B55FCBC622F4AA67004B79C5 /* AnalyticsConfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

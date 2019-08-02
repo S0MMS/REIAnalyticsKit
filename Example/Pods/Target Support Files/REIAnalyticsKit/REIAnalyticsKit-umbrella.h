@@ -19,6 +19,7 @@
 #import "REIAnalyticsKitHelper.h"
 #import "REIAnalyticsViewController.h"
 #import "REICoreAnalyticsDataProvider.h"
+#import "REIDefaultAnalyticsDataProvider.h"
 #import "REINewRelicAnalyticsAdapter.h"
 #import "REIObjectFactory.h"
 #import "UIViewController+REIAnalyticsDispatcher.h"

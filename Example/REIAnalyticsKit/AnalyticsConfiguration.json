@@ -1,0 +1,30 @@
+{
+    "globalAnalyticsProviders": ["REICoreAnalyticsDataProvider", "REIDefaultAnalyticsDataProvider"],
+    
+    "defaults": {
+        "rei.channel": "rei_commerce",
+        "rei.contentType": "non-commerce",
+        "rei.siteID": "rei",
+        "trackState": "onAppear"
+    },
+    
+    "classes": {
+        "FOOViewController": {
+            "defaults": {
+                "rei.pagename": "rei:POWERSCREEN",
+                "rei.channel": "checkout",
+                "rei.contentType": "commerce",
+                "rei.templateType": "cart",
+                "rei.siteID": "checkout",
+                "rei.subSection1": "rei:cart",
+                "rei.subSection2": "reicom"
+            },
+            "contextData": {
+                "rei.cartopen" : "1"
+            }
+        }
+    },
+    
+    "globalAnalyticsAdapters": ["REIAdobeAnalyticsAdapter", "REINewRelicAnalyticsAdapter"]
+    
+}
