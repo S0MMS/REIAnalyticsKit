@@ -128,13 +128,32 @@ NSString * const REIAnalyticsContextPageAndActionKey = @"rei.pageAndAction";
     return self.trackingIds;
 }
 
-- (void)adobeABTestWithName:(nullable NSString *)name
-             defaultContent:(nullable NSString *)defaultContent
-                 parameters:(nullable NSDictionary *)parameters
-                   callback:(nullable void (^)(NSString* __nullable content))callback {
-    // CKS: REIAnalyticsKit - ADOBE UPGRADE...TARGET
-//    ADBTargetLocationRequest* locationRequest = [ADBMobile targetCreateRequestWithName:name defaultContent:defaultContent parameters:nil];
-//    [ADBMobile targetLoadRequest:locationRequest callback:callback];
+- (void)testWithName:(nullable NSString *)name
+      defaultContent:(nullable NSString *)defaultContent
+          parameters:(nullable NSDictionary *)parameters
+            callback:(nullable void (^)(NSString* __nullable content))callback {
+
+    // create param object
+    ACPTargetParameters *params = [ACPTargetParameters targetParametersWithParameters:parameters
+                                                                     profileParameters:nil
+                                                                               product:nil
+                                                                                 order:nil];
+    // create request object
+    ACPTargetRequestObject *request1 = [ACPTargetRequestObject targetRequestObjectWithName:name
+                                                                          targetParameters:params
+                                                                            defaultContent:defaultContent
+                                                                                  callback:callback];
+    // create request object array
+    NSArray *requestArray = @[request1];
+
+    // create global params object
+    ACPTargetParameters *targetParameters = [ACPTargetParameters targetParametersWithParameters:nil
+                                                                              profileParameters:nil
+                                                                                        product:nil
+                                                                                          order:nil];
+    // call the api
+    [ACPTarget retrieveLocationContent:requestArray withParameters:targetParameters];
+    
 }
 
 

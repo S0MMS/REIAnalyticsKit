@@ -9,6 +9,7 @@
 #import "SOMMSViewController.h"
 
 @import REIAnalyticsKit;
+#import "REIAnalyticsKitHelper.h"
 
 @interface SOMMSViewController ()
 
@@ -27,6 +28,20 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    // do a simple AB test
+    NSString *testName = @"logo";
+    NSString *defaultContent = @"red";
+    NSDictionary *mboxParameters = @{@"userType":@"Paid"};
+    [[REIAnalyticsKitHelper shared] testWithName:testName defaultContent:defaultContent parameters:mboxParameters
+                                               callback:^(NSString * _Nullable content) {
+                                                   NSLog(@"yeeeah!");
+                                               }];
+    
 }
 
 @end

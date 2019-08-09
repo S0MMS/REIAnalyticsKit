@@ -9,7 +9,7 @@
     },
     
     "classes": {
-        "FOOViewController": {
+        "SOMMSViewController": {
             "defaults": {
                 "rei.pagename": "rei:POWERSCREEN",
                 "rei.channel": "checkout",

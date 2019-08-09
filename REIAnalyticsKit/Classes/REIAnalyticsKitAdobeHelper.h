@@ -20,15 +20,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)trackAction:(NSString *)action withContextData:(NSDictionary * _Nullable)contextData;
 
-// moving ADMobile out of the rest of the app
-//- (void)configureAdobeAnalytics:(NSString *)configFile appGroup:(nullable NSString *)appGroup;
 - (void)configureAdobeAnalytics: (NSString *)adobeApplicationId;
 
 - (void)setAdobeAnalyticsAppGroup:(NSString *)appGroup;
 - (NSString *)cloudMarketingId;
 - (NSString *)firstTrackingIdentifier;
 - (NSArray *)trackingIdentifiers;
-- (void)adobeABTestWithName:(nullable NSString *)name
+- (void)testWithName:(nullable NSString *)name
              defaultContent:(nullable NSString *)defaultContent
                  parameters:(nullable NSDictionary *)parameters
                    callback:(nullable void (^)(NSString* __nullable content))callback;

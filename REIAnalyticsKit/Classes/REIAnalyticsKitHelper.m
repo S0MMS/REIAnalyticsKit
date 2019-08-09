@@ -130,11 +130,11 @@
     return [[REIAnalyticsKitAdobeHelper shared] firstTrackingIdentifier];
 }
 
-- (void)adobeABTestWithName:(nullable NSString *)name
+- (void)testWithName:(nullable NSString *)name
              defaultContent:(nullable NSString *)defaultContent
                  parameters:(nullable NSDictionary *)parameters
                    callback:(nullable void (^)(NSString* __nullable content))callback {
-    [[REIAnalyticsKitAdobeHelper shared] adobeABTestWithName:name defaultContent:defaultContent parameters:parameters callback:callback];
+    [[REIAnalyticsKitAdobeHelper shared] testWithName:name defaultContent:defaultContent parameters:parameters callback:callback];
 }
 
 

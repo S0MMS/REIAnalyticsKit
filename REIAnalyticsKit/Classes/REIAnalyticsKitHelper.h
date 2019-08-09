@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setAdobeAnalyticsAppGroup:(NSString *)appGroup;
 - (NSString *)adobeCloudMarketingId;
 - (NSString *)firstAdobeTrackingIdentifier;
-- (void)adobeABTestWithName:(nullable NSString *)name
+- (void)testWithName:(nullable NSString *)name
              defaultContent:(nullable NSString *)defaultContent
                  parameters:(nullable NSDictionary *)parameters
                    callback:(nullable void (^)(NSString* __nullable content))callback;
